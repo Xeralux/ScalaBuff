@@ -1,0 +1,16 @@
+package resources.generated;
+
+option optimize_for = LITE_RUNTIME;
+
+message SimpleTest {
+	required int32 required_field = 1;
+	optional float optional_field = 2;
+	repeated string repeated_field = 3;
+	
+	optional int32 type = 4 [default=100];
+	optional int32 int32Default = 5 [default=100];
+	optional int32 int32Negative = 6 [default=-1];
+	optional string stringDefault = 7 [default="some string"];
+	optional float floatDefault = 8 [default=1.0];
+	optional float floatNegative = 9 [default=-1.0];
+}
