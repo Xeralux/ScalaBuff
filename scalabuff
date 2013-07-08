@@ -1,3 +1,5 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-scala $DIR/target/scala-2.9.2/scalabuff_2.9.2-0.9-SNAPSHOT.jar $*
+echo change dir $DIR
+cd $DIR
+sbt "run $*"
